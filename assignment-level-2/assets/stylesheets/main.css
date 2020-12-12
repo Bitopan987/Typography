@@ -1,0 +1,369 @@
+ /* Eric mayers Reset */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+                /* My Reset */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+                 /* Global-Styles */
+
+a{
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size:1.3em;
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 700;
+}
+img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+p {
+    font-size:.6rem;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:17px;
+
+   
+}
+
+small {
+    font-size:.6em;
+}
+
+
+                /* Custom Styles */
+
+.container {
+    margin: 0 auto;
+    padding:1.3rem 2rem;
+    max-width: 57rem;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+.clearfix::after{
+    clear: both;
+}
+
+
+
+
+
+
+                   /* Header */
+
+
+.header {
+    background-color: rgb(242, 248, 250);
+}
+
+.logo {
+    float: left;
+}
+
+.nav-bar {
+    float: right;
+}
+
+.nav-1 li {
+    display: inline-block;
+    padding: 0 0 0 1rem;
+}
+
+.logo a {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: black;
+   
+}
+
+.nav-1 a {
+    font-size: .8em;
+    font-weight: 700;
+    color: black;
+    line-height: 2;
+}
+
+.nav-1-view a {
+    border: 2px solid rgb(50, 172, 253);
+    padding: 6px;
+    border-radius: 7px;
+    transition: background-color ease-in 400ms;
+    background-color:transparent;
+    color: rgb(50, 172, 253);
+}
+
+.nav-1-view a:hover {
+    color: white;
+    background-color: rgb(127, 187, 243);
+}
+
+                   /* Intro Section */
+
+.intro{
+    background-color: rgb(36, 35, 35);
+    height:23rem;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+.short-hr {
+    border: none;
+    border-top: 2px solid rgb(241, 238, 238);
+    width: 21rem;
+    padding-bottom:2rem;
+}
+
+.intro-sec {
+    width: 46%;
+    padding: 1rem 0;
+    float: left;
+    color: white;
+}
+
+.img-div {
+    font-size:0;
+    width:46%;
+    float: right;
+}
+
+.intro-sec>p {
+    padding:2rem 0;
+    text-align: justify;
+}
+
+.intro-sec h1 {
+    line-height: 2.2rem;
+}
+
+.intro-sec a {
+    color: white;
+}
+
+.view-button {
+    border: 1px solid rgb(243, 241, 241);
+    padding: 7px 15px;
+    border-radius: 7px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color ease-in 400ms;
+}
+
+.view-button:hover{
+    background-color: rgba(255, 255, 255,.2) ;
+}
+
+
+                /* About Section */
+
+.img-div1 {
+    width:25rem;
+    float: left;
+    margin-top: 2.5rem;
+}
+
+.about-sec {
+    float: right;
+    width: 40%;
+    padding: 2rem 0 0 0;
+}
+
+.about-sec h2 {
+    font-weight: 700;
+}
+
+.about-sec p {
+    padding: 1.4rem 0;
+    text-align: justify;
+}
+
+.know-button {
+    border: 2px solid rgb(50, 172, 253);
+    padding: 7px 15px;
+    border-radius: 7px;
+    transition: background-color ease-in 400ms;
+    background-color:transparent;
+    color: rgb(50, 172, 253);
+}
+
+.know-button:hover {
+    color: white;
+    background-color: rgb(127, 187, 243);
+}
+
+
+            /* Feature Section */
+
+.art-1 {
+    float: left;
+    width: 33.33%;
+}
+
+.feature-sec h2 {
+    padding: 1.5rem 0;
+}
+
+.art-1>p,h3 {
+    padding: .7rem 0;
+}
+
+.fas {
+    background-color: rgb(42, 175, 252);
+    padding: 5px;
+    color: white;
+    border-radius: 50%;
+    width:35px;
+    height: 35px;
+    text-align: center;
+    padding: 8px;
+}
+
+.box {
+    background-color: rgb(36, 35, 35);
+    margin-bottom: .7rem;
+}
+
+.box h2{
+    float: left;
+    width: 30%;
+    padding-left: 2rem;
+    color: white;
+}
+.work-button {
+    float: right;
+    margin: 1.8rem 2rem 0 0; 
+    font-size: .7em;
+    border: 2px solid white;
+    padding: 7px;
+    border-radius: 7px;
+    transition: background-color ease-in 400ms;
+    background-color:transparent;
+    color: white;
+}
+
+.work-button:hover {
+    background-color: rgba(255, 255, 255,.2);
+}
+
+.prol {
+    margin-top: 1rem;
+    
+}
+
+.Prol a {
+    float: left;
+    font-weight:900;
+    color:rgb(26, 24, 24);
+}
+
+.nav-icon {
+    float: right;
+   
+}
+
+.fab {
+    font-size: 30px;
+    color: rgb(49, 141, 245);
+    padding-left: 12px;
+    border-radius: 17px;
+}
+
+.nav-2 li {
+    display: inline-block;
+    padding:10px;
+    font-size: .6em;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.nav-2 {
+    text-align: center;
+}
+
+.nav-2 a {
+   color: rgb(56, 55, 55);
+}
+
+
+                   /* Footer */
+
+.footer {
+    background-color: rgb(36, 35, 35);
+    color: rgb(226, 234, 240);
+    padding:2rem 0;
+    text-align: center;
+}
+
+
+
+
