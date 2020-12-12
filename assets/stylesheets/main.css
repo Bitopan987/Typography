@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@600;700&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+/* Eric Mayers Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+            /* My Reset */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+              /* Global Styles */
+
+h1 {
+    font-size:2rem;
+}
+
+strong {
+    font-size:1.3em;
+    font-weight:600;
+}
+
+time {
+    font-size:1.3em;
+    font-weight:600;
+}
+
+h2 {
+    font-size:1.6em;
+}
+
+p {
+    font-size: .8em;
+    text-align: justify;
+}
+
+
+            /*Modular Class */
+
+.container {
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    width: 55rem;
+ 
+}
+
+.clearfix::before,
+.clearfix::after {
+   content: "";
+   display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+
+
+             /* Custom-Styles */
+
+             
+.header,.main {
+    background-color: rgb(22, 24, 27);
+}
+.head-1 {
+    font-family: 'Signika', sans-serif;
+    color: rgb(209, 205, 205);
+    text-align: justify;
+    text-shadow: 2px 2px 2px rgba(184, 179, 179, 0.5);
+}
+
+.hero-1{
+    float: left;
+    color:maroon;
+}
+.hero-2 {
+    float: right;
+    color: rgb(204, 195, 195);
+}
+
+p,.head-2 {
+    padding-top: 1.5rem;
+}
+
+p {
+    font-family: 'Archivo', sans-serif;
+    line-height:1.2;
+    color: gray;
+}
+
+.head-2 {
+    font-family: 'Signika', sans-serif;
+    color: rgb(197, 184, 184);
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(184, 179, 179, 0.5);
+}
