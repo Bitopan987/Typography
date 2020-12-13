@@ -155,7 +155,7 @@ small {
 
 .nav-1-view a {
     border: 2px solid rgb(50, 172, 253);
-    padding: 6px;
+    padding:7px 14px;
     border-radius: 7px;
     transition: background-color ease-in 400ms;
     background-color:transparent;
@@ -303,9 +303,9 @@ h1 {
 .work-button {
     float: right;
     margin: 1.8rem 2rem 0 0; 
-    font-size: .7em;
+    font-size: .8em;
     border: 2px solid white;
-    padding: 7px;
+    padding: 8px 14px;
     border-radius: 7px;
     transition: background-color ease-in 400ms;
     background-color:transparent;
